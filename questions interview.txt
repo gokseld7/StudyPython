@@ -1,0 +1,150 @@
+questions interview
+----------------------
+--------------------------------------------------------------
+1 - is this code valid ? 
+
+'''
+def foo():
+	print("aaaa")
+
+foo()
+
+def foo():
+	print("bbbb")
+
+foo()
+'''
+
+if this code is valid, what would be the output ?
+--------------------------------------------------------------
+
+
+--------------------------------------------------------------
+2 - is this code valid and what would be output if valid?
+'''
+def foo():
+	print("aaaa")
+
+def foo():
+	print("bbbb")
+
+
+if __name__ == '__main__':
+	foo()
+'''
+--------------------------------------------------------------
+
+
+--------------------------------------------------------------
+3 - is this code valid ? what would be the output ?
+
+class A:
+	def foo(self):
+		print("A")
+
+
+class B:
+	def foo(self):
+		print("B")
+
+
+class C(A,B):
+	def __init__(self):
+		print("Hello")
+
+
+c = C()
+c.foo()
+--------------------------------------------------------------
+
+4 - is this code valid ? What would be the output ?
+
+while True:
+	x = int(input("Enter a number: "))
+	try:
+		print(x/x)
+	except ZeroDivisionError:
+		break
+	finally:
+		print("finally part")
+
+print("outside of the loop")
+
+--------------------------------------------------------------
+
+5 - we have two sets a={1,2,3} and b={3,4,5}. Find their intersection and union.
+
+--------------------------------------------------------------
+
+6 - Find the most used letter in 'avada kedavra' with the optimal solution
+
+--------------------------------------------------------------
+
+7 - is this code valid ? What would be the output ?
+
+'''
+a = 5
+b = "hello"
+c = [1,2]
+
+def foo(a: int, b: str, c: list[int]) -> None:
+	a += 3
+	b += "world"
+	c.append(6)
+	print(a)
+	print(b)
+	print(c)
+
+
+foo(a,b,c)
+print(a)
+print(b)
+print(c)
+'''
+
+answer : 
+
+8
+
+helloworld
+
+[1, 2, 6]
+
+5
+
+hello
+
+[1, 2, 6]
+
+
+--------------------------------------------------------------
+
+8 - is this code valid ? What would be the output ?
+
+'''
+a = [4,6]
+
+print(a[-3])
+
+print(a[-3:-2])
+
+print(a[-3:])
+'''
+
+answer:
+
+IndexError: list out of range
+
+[]
+
+[4,6]
+
+--------------------------------------------------------------
+
+10 - 
+
+--------------------------------------------------------------
+
+11 - 
+
+--------------------------------------------------------------
